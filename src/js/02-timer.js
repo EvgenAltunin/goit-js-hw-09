@@ -12,6 +12,7 @@ const refs = {
 }
 
 let startCountdownDate = null;
+refs.startBtn.disabled = true;
 
 const options = {
   enableTime: true,
@@ -21,7 +22,6 @@ const options = {
   onClose(selectedDates) {
     if (selectedDates[0].getTime() <= Date.now()) {
         Notify.failure("Please choose a date in the future");
-        refs.startBtn.disabled = true;
     } else {
         refs.startBtn.disabled = false;
         startCountdownDate = selectedDates[0].getTime();
