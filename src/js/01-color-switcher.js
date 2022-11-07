@@ -16,15 +16,17 @@ refs.startBtn.before(heading);
 // ==========================================
 
 let timerId = null;
-let TIMER_INTERVAL = 1000; //milliseconds
+const TIMER_INTERVAL = 1000; //milliseconds
 let currentColor = "";
+
+
 
 refs.stopBtn.disabled = true;
 
 refs.startBtn.addEventListener("click", () => {
     refs.startBtn.disabled = true;
     refs.stopBtn.disabled = false;
-    console.log(`Body random background color change was started with inerval ${timerInterval / 1000} second:`);
+    console.log(`Body random background color change was started with inerval ${TIMER_INTERVAL / 1000} second:`);
     
     timerId = setInterval(() => {
         const randomColor = getRandomHexColor();
