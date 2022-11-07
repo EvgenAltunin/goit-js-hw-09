@@ -1,1 +1,0 @@
-{"mappings":"AACAA,QAAQC,IADQ","sources":["src/js/01-color-switcher.js"],"sourcesContent":["const testMsg = \"Test console msg\"\nconsole.log(testMsg)\n"],"names":["console","log"],"version":3,"file":"01-color-switcher.acc13d23.js.map"}
