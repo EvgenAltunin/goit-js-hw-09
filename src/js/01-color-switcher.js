@@ -12,12 +12,12 @@ const refs = {
 // =========== Відсєбятіна ==================
 const heading = document.createElement("h1");
 heading.style.fontSize = "18px"
-heading.textContent = "To start color change of background color press Start and to stop color change press Stop.";
+heading.textContent = "To start color change of background color press 'Start' button and to stop color change press 'Stop' button.";
 refs.startBtn.before(heading)
 // ==========================================
 
 let timerId = null;
-let timerInterval = 1000;
+let timerInterval = 1000; //milliseconds
 let currentColor = "";
 
 refs.stopBtn.disabled = true;
