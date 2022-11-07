@@ -1,4 +1,3 @@
-
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
@@ -17,7 +16,7 @@ refs.startBtn.before(heading);
 // ==========================================
 
 let timerId = null;
-let timerInterval = 1000; //milliseconds
+let TIMER_INTERVAL = 1000; //milliseconds
 let currentColor = "";
 
 refs.stopBtn.disabled = true;
@@ -32,7 +31,7 @@ refs.startBtn.addEventListener("click", () => {
         refs.body.style.backgroundColor = randomColor;
         currentColor = randomColor;
         console.log(`Color was changed to ${randomColor}`);
-    }, timerInterval);
+    }, TIMER_INTERVAL);
 });
 
 refs.stopBtn.addEventListener("click", () => {
