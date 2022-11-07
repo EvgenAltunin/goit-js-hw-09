@@ -1,0 +1,1 @@
+{"mappings":"AACAA,QAAQC,IADQ","sources":["src/js/02-timer.js"],"sourcesContent":["const testMsg = \"Test console msg\"\nconsole.log(testMsg)"],"names":["console","log"],"version":3,"file":"02-timer.146f83f0.js.map"}
