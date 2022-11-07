@@ -6,3 +6,6 @@ function createPromise(position, delay) {
     // Reject
   }
 }
+
+const testMsg = "Test console msg"
+console.log(testMsg)
