@@ -20,11 +20,11 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0].getTime() <= Date.now()) {
-        Notify.failure("Please choose a date in the future")
+        Notify.failure("Please choose a date in the future");
         refs.startBtn.disabled = true;
     } else {
         refs.startBtn.disabled = false;
-        startCountdownDate = selectedDates[0].getTime()
+        startCountdownDate = selectedDates[0].getTime();
       }
   },
 };
@@ -51,8 +51,7 @@ const timer = {
                 clearInterval(this.intervalId);
                 return
             }
-            const timeParts = convertMs(deltaTime)
-            // console.log(`${days}:${hours}:${minutes}:${seconds}`)
+            const timeParts = convertMs(deltaTime);
             refs.daysValue.textContent = `${timeParts.days}`;
             refs.hoursValue.textContent = `${timeParts.hours}`;
             refs.minutesValue.textContent = `${timeParts.minutes}`;
